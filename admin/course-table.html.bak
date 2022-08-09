@@ -209,6 +209,9 @@
                                                 <label for="">Fee</label>
                                                 <input type="text" class="form-control" value="">
 
+                                                <label for="">Duration</label>
+                                                <input type="text" class="form-control" value="">
+
                                                 <label for="">Description</label>
                                                 <input type="text" class="form-control" value="">
 
