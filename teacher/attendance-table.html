@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <title>Table - Brand</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anek+Bangla&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anek+Kannada&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Average+Sans&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inria+Sans&amp;display=swap"/>
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css"/>
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css"/>
+    <link rel="stylesheet" href="../assets/fonts/material-icons.min.css"/>
+    <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css"/>
+    <link rel="stylesheet" href="../assets/css/Bootstrap-Chat.css"/>
+    <link rel="stylesheet" href="../assets/css/Dark-footer-with-social-media-icons.css"/>
+    <link rel="stylesheet" href="../assets/css/dh-header-cover-image-button.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <!-- datatable-css -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"/>
+</head>
+
+
+<body id="page-top">
+    <div id="wrapper"><nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background: rgb(50,77,160);"> 
+                <div class="container d-flex flex-column p-0"> 
+                    <hr class="sidebar-divider my-0"/> 
+                    <ul class="mt-4 navbar-nav text-light" id="accordionSidebar"> 
+                        <!-- side bar link start -->                         
+                        <li class="nav-item">
+                            <a class="nav-link d-flex d-md-flex" data-bss-hover-animate="pulse" href="teacher-dashboard.html" style="font-size: 15.6px;">  <div class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center"> <i class="fa-chart-bar fas fs-4"></i> 
+                                    <div> 
+                                        <p style="margin-top: 1px;margin-bottom: -4px;">Dashboard</p> 
+                                    </div>                                     
+                                </div>  </a>
+                        </li>                         
+                        <!-- side bar link end -->                         
+                        <!-- side bar link start -->                         
+                        <li class="nav-item">
+                            <a class="nav-link d-flex d-md-flex" data-bss-hover-animate="pulse" href="post-content.html" style="font-size: 15.6px;">  <div class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center"> <i class="fa-photo-video fas fs-4"></i> 
+                                    <div> 
+                                        <p style="margin-top: 1px;margin-bottom: -4px; font-size: 14px;">Post Content</p> 
+                                    </div>                                     
+                                </div>  </a>
+                            <a class="nav-link d-flex d-md-flex" data-bss-hover-animate="pulse" href="student-table.html" style="font-size: 15.6px;">  <div class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center"> <i class="fa-users fas fs-4"></i> 
+                                    <div> 
+                                        <p style="margin-top: 1px;margin-bottom: -4px; font-size: 14px;">&nbsp;Student Table</p> 
+                                    </div>                                     
+                                </div>  </a>
+                            <a class="active d-flex d-md-flex nav-link" data-bss-hover-animate="pulse" href="attendance-table.html" style="font-size: 15.6px;">  <div class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center"> <i class="fa-user-check fas fs-4"></i> 
+                                    <div> 
+                                        <p style="margin-top: 1px;margin-bottom: -4px; font-size: 14px;">Attendance Table</p> 
+                                    </div>                                     
+                                </div>  </a>
+                            <a class="nav-link d-flex d-md-flex" data-bss-hover-animate="pulse" href="attendance.html" style="font-size: 15.6px;">  <div class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center"> <i class="fa-users-cog fas fs-4"></i> 
+                                    <div> 
+                                        <p style="margin-top: 1px;margin-bottom: -4px; font-size: 14px;">Attendance</p> 
+                                    </div>                                     
+                                </div>  </a>
+                        </li>                         
+                        <!-- side bar link end -->                         
+                        <!-- side bar link start -->                         
+                        <li class="nav-item">
+                            <a class="nav-link d-flex d-md-flex" data-bss-hover-animate="pulse" href="assignment-table.html" style="font-size: 15.6px;">  <div class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center"> <i class="fa-clipboard-list fas fs-4"></i> 
+                                    <div> 
+                                        <p style="margin-top: 1px;margin-bottom: -4px; font-size: 14px;">Assignment Table</p> 
+                                    </div>                                     
+                                </div>  </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex d-md-flex" data-bss-hover-animate="pulse" href="assignment-grade.html" style="font-size: 15.6px;">  <div class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center"> <i class="fa-file-signature fas fs-4"></i> 
+                                    <div> 
+                                        <p style="margin-top: 1px;margin-bottom: -4px; font-size: 14px;">Assignment Grade</p> 
+                                    </div>                                     
+                                </div>  </a>
+                        </li>                         
+                        <!-- side bar link end -->                         
+                        <!-- side bar link start -->                         
+                        <li class="nav-item">
+                            <a class="nav-link d-flex d-md-flex" data-bss-hover-animate="pulse" href="exam-table.html" style="font-size: 15.6px;">  <div class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center"> <i class="fa-file-signature fas fs-4"></i> 
+                                    <div> 
+                                        <p style="margin-top: 1px;margin-bottom: -4px; font-size: 14px;">Exam Table</p> 
+                                    </div>                                     
+                                </div>  </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex d-md-flex" data-bss-hover-animate="pulse" href="exam-grade.html" style="font-size: 15.6px;">  <div class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center"> <i class="fa-poll-h fas fs-4"></i> 
+                                    <div> 
+                                        <p style="margin-top: 1px;margin-bottom: -4px; font-size: 14px;">Exam Grade</p> 
+                                    </div>                                     
+                                </div>  </a>
+                        </li>                         
+                        <!-- side bar link end -->                         
+                        <!-- side bar link start -->                         
+                        <li class="nav-item"></li>                         
+                        <!-- side bar link end -->                         
+                        <!-- side bar link start -->                         
+                        <li class="nav-item"></li>                         
+                        <!-- side bar link end -->                         
+                        <!-- side bar link start -->                         
+                        <li class="nav-item"></li>                         
+                        <!-- side bar link end -->                         
+                        <!-- side bar link start -->                         
+                        <!-- side bar link end -->                         
+                        <!-- side bar link start -->                         
+                        <!-- side bar link end -->                         
+                    </ul>                     
+                    <div class="text-center d-none d-md-inline">
+                        <button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button>
+                    </div>                     
+                </div>                 
+            </nav>
+        
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button><img src="../assets/img/logo.png" style="width: 138px;"/>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow">
+                                    <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">
+                                        <span class="d-none d-lg-inline me-2 text-gray-600 small">
+                                            Sitt Thiha Naing
+                                        </span>
+                                        <img class="border rounded-circle img-profile" src="../assets/img/avatars/avatar1.jpeg"/>
+                                    </a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+                                        <a class="dropdown-item" href="/student/student-profile.html">
+                                            <i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>
+                                            &nbsp;Profile
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>
+                                            &nbsp;Logout
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <h1 class="text-start" style="margin-bottom: 42px;font-size: 33px;color: rgb(72,72,72);font-weight: bold;font-family: 'Anek Kannada', sans-serif;">
+                        Attendance
+                    </h1>
+                    <div class="card shadow">
+                        <div class="card-header py-3">
+                            <form class="d-flex">
+                                <div class="me-3">
+                                    <div class="col-auto text-nowrap" style="width: 237.078px;margin-top: 4px;">
+                                        <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable">
+                                            <label for="exampleInputEmail1" class="form-label">Date</label>
+                                            <input type="date" class="form-control"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="me-3">
+                                    <div class="col-auto text-nowrap" style="width: 237.078px;margin-top: 4px;">
+                                        <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable">
+                                            <label class="form-label">Batch</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Choose One Batch</option>
+                                                <option value="1">Java Web Development Batch-01</option>
+                                                <option value="2">Angular Batch-02</option>
+                                                <option value="3">OJT Batch-01</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="margin-top: 2.2rem;">
+                                    <button class="btn btn-primary">Search</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="card-body">
+
+                            <!-- where I have to write table -->
+                            <table id="dataTable">
+                                <thead class="table">
+                                    <tr>
+                                        <th>Student Id</th>
+                                        <th>Student Name</th>
+                                        <th>Batch</th>
+                                        <th>Date</th>
+                                        <th>Attendance Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>Sheldon</td>
+                                        <td>OJT</td>
+                                        <td>2022-11-11</td>
+                                        <td class="text-success fw-bold">Present</td>
+                                    </tr>
+                                    <tr>
+                                        <td>002</td>
+                                        <td>Monica</td>
+                                        <td>OJT</td>
+                                        <td>2022-11-11</td>
+                                        <td class="text-danger fw-bold">Absent</td>
+                                    </tr>
+                                    <tr>
+                                        <td>003</td>
+                                        <td>Chandler</td>
+                                        <td>OJT</td>
+                                        <td>2022-11-11</td>
+                                        <td class="text-warning fw-bold">Leave</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2022</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- datatable-js -->
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dataTable').DataTable();
+        });
+    </script>
+</body>
+
+</html>

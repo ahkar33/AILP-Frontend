@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - Brand</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anek+Bangla&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anek+Kannada&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Average+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inria+Sans&amp;display=swap">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- datatable-css -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0"
+            style="background: rgb(50,77,160);">
+            <div class="container d-flex flex-column p-0">
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light mt-4" id="accordionSidebar">
+
+                    <!-- link start -->
+                    <li class="nav-item">
+                        <a class="nav-link d-flex d-md-flex" data-bss-hover-animate="pulse" href="admin-dashboard.html"
+                            style="font-size: 15.6px;">
+                            <div
+                                class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center">
+                                <img src="../assets/img/sidebar_icons/clipboard-image.png"
+                                    style="width: 27px;font-size: 17.6px;opacity: 0.91;filter: invert(100%);margin-right: 5px;margin-left: 5px;">
+                                <div>
+                                    <p style="margin-top: 1px;margin-bottom: -4px;">Dashboard</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- link end -->
+
+                    <!-- link start -->
+                    <li class="nav-item align-items-center">
+                        <a class="nav-link d-flex d-md-flex align-items-md-center" data-bss-hover-animate="pulse"
+                            href="course-table.html" style="font-size: 15.6px;">
+                            <div
+                                class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center">
+                                <img src="../assets/img/sidebar_icons/clipboard-image-1.png"
+                                    style="width: 28px;font-size: 17.6px;opacity: 1;margin-left: 5px;margin-right: 5px;filter: invert(100%);">
+                                <div>
+                                    <p style="margin-top: 1px;margin-bottom: -4px;">Course Table</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- link end -->
+
+                    <!-- link start -->
+                    <li class="nav-item align-items-center">
+                        <a class="nav-link active d-flex d-md-flex align-items-md-center" data-bss-hover-animate="pulse"
+                            href="batch-table.html" style="font-size: 15.6px;">
+                            <div
+                                class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center">
+                                <img src="../assets/img/admin_dashboard_logo/batches_logo.png"
+                                    style="width: 29px;font-size: 17.6px;opacity: 1;margin-left: 5px;margin-right: 5px;filter: brightness(200%) grayscale(100%) invert(0%);">
+                                <div>
+                                    <p style="margin-top: 1px;margin-bottom: -4px;">Batch Table</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- link end -->
+
+                    <!-- link start -->
+                    <li class="nav-item align-items-center">
+                        <a class="nav-link d-flex d-md-flex align-items-md-center" data-bss-hover-animate="pulse"
+                            href="exam-table.html" style="font-size: 15.6px;">
+                            <div
+                                class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center">
+                                <img src="../assets/img/sidebar_icons/clipboard-image-11.png"
+                                    style="width: 29px;font-size: 17.6px;opacity: 1;margin-left: 5px;margin-right: 5px;filter: invert(0%);">
+                                <div>
+                                    <p style="margin-top: 1px;margin-bottom: -4px;">Exam Table</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- link end -->
+
+                    <!-- link start -->
+                    <li class="nav-item align-items-center">
+                        <a class="nav-link d-flex d-md-flex align-items-md-center" data-bss-hover-animate="pulse"
+                            href="teacher-table.html" style="font-size: 15.6px;">
+                            <div
+                                class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center">
+                                <img src="../assets/img/sidebar_icons/teacher_table_logo.png"
+                                    style="width: 28px;font-size: 17.6px;opacity: 1;margin-left: 5px;margin-right: 5px;">
+                                <div>
+                                    <p style="margin-top: 1px;margin-bottom: -4px;">Teacher Table</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- link end -->
+
+                    <!-- link start -->
+                    <li class="nav-item align-items-center">
+                        <a class="nav-link d-flex d-md-flex align-items-md-center" data-bss-hover-animate="pulse"
+                            href="student-table.html" style="font-size: 15.6px;">
+                            <div
+                                class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center">
+                                <img src="../assets/img/sidebar_icons/student_table_logo.png"
+                                    style="width: 28px;font-size: 17.6px;opacity: 1;margin-left: 5px;margin-right: 5px;">
+                                <div>
+                                    <p style="margin-top: 1px;margin-bottom: -4px;">Student Table</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- link end -->
+
+                    <!-- side bar link start -->
+                    <li class="nav-item"><a class="nav-link d-flex d-md-flex" data-bss-hover-animate="pulse"
+                            href="attendance-table.html" style="font-size: 15.6px;">
+                            <div
+                                class="text-center d-flex justify-content-center align-items-center flex-wrap justify-content-lg-center align-items-lg-center">
+                                <img src="../assets/img/sidebar_icons/student_table_logo.png"
+                                    style="width: 28px;font-size: 17.6px;opacity: 1;margin-left: 5px;margin-right: 5px;">
+                                <div>
+                                    <p style="margin-top: 1px;margin-bottom: -4px;">Attendance Table</p>
+                                </div>
+                            </div>
+                        </a></li>
+                    <!-- side bar link end -->
+
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0"
+                        id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3"
+                            id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button><img
+                            src="../assets/img/logo.png" style="width: 138px;">
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow">
+                                    <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown"
+                                        href="#">
+                                        <span class="d-none d-lg-inline me-2 text-gray-600 small">
+                                            Sitt Thiha Naing
+                                        </span>
+                                        <img class="border rounded-circle img-profile"
+                                            src="../assets/img/avatars/avatar1.jpeg">
+                                    </a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+                                        <a class="dropdown-item" href="/student/student-profile.html">
+                                            <i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>
+                                            &nbsp;Profile
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>
+                                            &nbsp;Logout
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <h1 class="text-start"
+                        style="margin-bottom: 42px;font-size: 33px;color: rgb(72,72,72);font-weight: bold;font-family: 'Anek Kannada', sans-serif;">
+                        Batch Table</h1>
+                    <div
+                        class="d-flex justify-content-end align-items-end justify-content-lg-end justify-content-xl-end align-items-xl-center">
+                        <div><a class="btn btn-primary btn-lg" role="button" href="#add-batch-button"
+                                data-bs-toggle="modal"
+                                style="width: 176.1px;font-size: 16px;height: 44px;margin-bottom: 12px;"><img
+                                    src="../assets/img/admin_dashboard_logo/batches_logo.png"
+                                    style="width: 27px;filter: brightness(200%) grayscale(100%);">&nbsp; &nbsp;Create
+                                Batch</a>
+                            <div class="modal fade" role="dialog" tabindex="-1" id="add-batch-button">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <form>
+                                            <div class="modal-header" style="background: #f8f9fc;">
+                                                <h4
+                                                    style="color: rgb(75,75,75);font-family: 'Anek Bangla', sans-serif;font-weight: bold;margin-top: 5px;margin-bottom: 2px;">
+                                                    Create Batch</h4><button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <label for="">Course</label>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected disabled>Choose One Course</option>
+                                                    <option value="1">Web Java</option>
+                                                    <option value="2">OJT</option>
+                                                    <option value="3">PHP</option>
+                                                </select>
+
+                                                <label for="">Batch Name</label>
+                                                <input type="text" class="form-control" value=""
+                                                    placeholder="eg: Java Batch 01">
+
+
+                                                <label for="">Start Date</label>
+                                                <input type="date" class="form-control" value="">
+
+                                                <label for="">End Date</label>
+                                                <input type="date" class="form-control" value="">
+
+                                            </div>
+                                            <div class="modal-footer" style="background: #f8f9fc;"><button
+                                                    class="btn btn-light" type="submit" data-bs-dismiss="modal"
+                                                    style="margin-right: 13px;">Cancel</button><button
+                                                    class="btn btn-primary" type="submit">Create</button></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow">
+                        <!-- <div class="card-header py-3">
+                            <form>
+                                <div class="row">
+                                    <div class="col-auto text-nowrap" style="width: 237.078px;margin-top: 4px;">
+                                        <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable">
+                                            <label class="form-label" style="color: rgb(77,77,77);"
+                                                for="cours-name">Course<select
+                                                    class="form-select d-inline-block form-select form-select-sm"
+                                                    style="margin-left: 10px;width: 146.062px;" name="cours-name">
+                                                    <option value="JAVA">JAVA</option>
+                                                    <option value="PHP">PHP</option>
+                                                    <option value="Programming Fundamental">Programming Fundamental
+                                                    </option>
+                                                    <option value="Andriod">Andriod</option>
+                                                </select>&nbsp;</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-lg-3"><button class="btn btn-dark border rounded shadow-sm"
+                                            type="submit">Search</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div> -->
+                        <div class="card-body">
+
+                            <!-- data table -->
+                            <table id="dataTable">
+                                <thead class="table">
+                                    <tr>
+                                        <th>Batch Id</th>
+                                        <th>Batch Name</th>
+                                        <th>Course</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>001</td>
+                                        <td>Web Java Batch 01</td>
+                                        <td>Web Java</td>
+                                        <td>2022-11-11</td>
+                                        <td>2022-12-12</td>
+                                        <td>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                Edit
+                                            </button>
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                                data-bs-keyboard="false" tabindex="-1"
+                                                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="staticBackdropLabel">Edit
+                                                                Batch
+                                                            </h5>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <form action="">
+                                                            <div class="modal-body">
+
+                                                                <label for="">Batch Id</label>
+                                                                <input type="text" class="form-control" value="001"
+                                                                    readonly>
+
+                                                                <label for="">Course</label>
+                                                                <select class="form-select"
+                                                                    aria-label="Default select example">
+                                                                    <option selected disabled>Choose One Course</option>
+                                                                    <option value="1">Web Java</option>
+                                                                    <option value="2">Angular</option>
+                                                                    <option value="3">OJT</option>
+                                                                </select>
+
+                                                                <label for="">Batch Name</label>
+                                                                <input type="text" class="form-control"
+                                                                    value="Web Java Batch-01">
+
+                                                                <label for="">Start Date</label>
+                                                                <input type="date" class="form-control"
+                                                                    value="2022-11-11">
+
+                                                                <label for="">End Date</label>
+                                                                <input type="date" class="form-control"
+                                                                    value="2022-12-12">
+
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">Close</button>
+                                                                <button type="submit"
+                                                                    class="btn btn-primary">Edit</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-outline-danger">Remove</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>002</td>
+                                        <td>OJT Batch 01</td>
+                                        <td>Web Java</td>
+                                        <td>2022-11-11</td>
+                                        <td>2022-12-12</td>
+                                        <td>
+                                            <button class="btn btn-primary">Edit</button>
+                                            <button class="btn btn-outline-danger">Remove</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>002</td>
+                                        <td>PHP Batch 01</td>
+                                        <td>Web Java</td>
+                                        <td>2022-11-11</td>
+                                        <td>2022-12-12</td>
+                                        <td>
+                                            <button class="btn btn-primary">Edit</button>
+                                            <button class="btn btn-outline-danger">Remove</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2022</span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../assets/js/theme.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- datatable-js -->
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dataTable').DataTable();
+        });
+    </script>
+</body>
+
+</html>

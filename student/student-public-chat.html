@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Private Chat</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anek+Bangla&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anek+Kannada&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Average+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dangrek&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+KR&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inria+Sans&amp;display=swap">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="../assets/css/Bootstrap-Chat.css">
+    <link rel="stylesheet" href="../assets/css/Community-ChatComments.css">
+    <link rel="stylesheet" href="../assets/css/custom-nav-hide.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/textarea.css">
+</head>
+
+<body>
+
+    <!-- pc view nav bar -->
+    <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+        <div class="container"><img src="../assets/img/logo.png" style="width: 160px;">
+            <ul class="navbar-nav flex-nowrap ms-auto">
+                <li class="nav-item hide-on-desktop" data-bs-toggle="tooltip" data-bss-tooltip="" title="Home Page"
+                    style="margin-right: 3px;margin-left: 3px;">
+                    <a class="nav-link active" href="student-home-page.html"><i class="icon ion-ios-home"
+                            style="font-size: 25px;"></i>
+                    </a>
+                </li>
+                <li class="nav-item hide-on-desktop" data-bs-toggle="tooltip" data-bss-tooltip="" title="Videos"
+                    style="margin-right: 3px;margin-left: 3px;">
+                    <a class="nav-link" href="student-course-videos.html"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16"
+                            class="bi bi-play-circle-fill" style="font-size: 20px;">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item hide-on-desktop" data-bs-toggle="tooltip" data-bss-tooltip="" title="Group Chat"
+                    style="margin-right: 3px;margin-left: 3px;">
+                    <a class="nav-link" href="student-public-chat.html"><i class="icon ion-chatboxes"
+                            style="font-size: 22px;margin-top: 2px;"></i>
+                    </a>
+                </li>
+                <div class="d-none d-sm-block topbar-divider"></div>
+                <li class="nav-item dropdown no-arrow">
+                    <div class="nav-item dropdown no-arrow">
+                        <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown"
+                            href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small"
+                                style="font-size: 15px;font-weight: bold;">Zar Zar Soe</span><img
+                                class="border rounded-circle img-profile" src="../assets/img/zzs_profile.jpg">
+                        </a>
+                        <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+                            <a class="dropdown-item" href="student-profile.html"><i
+                                    class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#logout-modal-button-1"
+                                data-bs-target="#logout-modal-button-1" data-bs-toggle="modal"><i
+                                    class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>
+                                &nbsp;Logout
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 45rem;">
+        <div class="d-sm-flex justify-content-between align-items-center mb-4" style="margin-top: 35px;">
+            <h3 class="mb-0"
+                style="font-weight: bold;font-family: 'Anek Kannada', sans-serif;font-size: 30px;color: rgb(103,103,103);">
+                Group Chat
+            </h3>
+        </div>
+        <div class="card m-5">
+            <div class="card-header">
+                <p class="text-dark my-0"
+                    style="font-family: 'IBM Plex Sans KR', sans-serif;font-size: 20px;font-weight: bold;">
+                    OJT Batch 04
+                </p>
+            </div>
+            <div class="card-body chatbox-body">
+                <div class="text-center p-2">
+                    <p class="text-secondary" style="font-size: 14px;">Today, 6:38 PM</p>
+                </div>
+
+                <!-- name profile pic and text messages start -->
+                <div>
+                    <p class="text-dark" style="font-family: 'IBM Plex Sans KR', sans-serif;"><img
+                            class="border rounded-circle me-3" style="width: 30px;height: 30px;margin-top: -4px;"
+                            src="../assets/img/zzs_profile.jpg">Zar Zar Soe</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Sollicitudin lacus justo pharetra at. Primis tortor
+                        porta luctus tempus non netus, ipsum iaculis. Eget dictum erat, litora ullamcorper lacinia.</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                </div>
+                <!-- name profile pic and text messages end -->
+
+                <!-- dummy messages start -->
+                <div>
+                    <p class="text-dark" style="font-family: 'IBM Plex Sans KR', sans-serif;"><img
+                            class="border rounded-circle me-3" style="width: 30px;height: 30px;margin-top: -4px;"
+                            src="../assets/img/mock_profile.jpg">Daw Myo Yee Rose</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Sollicitudin lacus justo pharetra at. Primis tortor
+                        porta luctus tempus non netus, ipsum iaculis. Eget dictum erat, litora ullamcorper lacinia.</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                </div>
+
+                <div>
+                    <p class="text-dark" style="font-family: 'IBM Plex Sans KR', sans-serif;"><img
+                            class="border rounded-circle me-3" style="width: 30px;height: 30px;margin-top: -4px;"
+                            src="../assets/img/mock_profile.jpg">Daw Myo Yee Rose</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Sollicitudin lacus justo pharetra at. Primis tortor
+                        porta luctus tempus non netus, ipsum iaculis. Eget dictum erat, litora ullamcorper lacinia.</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                </div>
+                <div class="text-center p-2">
+                    <p class="text-secondary" style="font-size: 14px;">Today, 6:38 PM</p>
+                </div>
+                <div>
+                    <p class="text-dark" style="font-family: 'IBM Plex Sans KR', sans-serif;"><img
+                            class="border rounded-circle me-3" style="width: 30px;height: 30px;margin-top: -4px;"
+                            src="../assets/img/zzs_profile.jpg">Zar Zar Soe</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Sollicitudin lacus justo pharetra at. Primis tortor
+                        porta luctus tempus non netus, ipsum iaculis. Eget dictum erat, litora ullamcorper lacinia.</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                </div>
+                <div>
+                    <p class="text-dark" style="font-family: 'IBM Plex Sans KR', sans-serif;"><img
+                            class="border rounded-circle me-3" style="width: 30px;height: 30px;margin-top: -4px;"
+                            src="../assets/img/mock_profile.jpg">Daw Myo Yee Rose</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Sollicitudin lacus justo pharetra at. Primis tortor
+                        porta luctus tempus non netus, ipsum iaculis. Eget dictum erat, litora ullamcorper lacinia.</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                </div>
+                <div>
+                    <p class="text-dark" style="font-family: 'IBM Plex Sans KR', sans-serif;"><img
+                            class="border rounded-circle me-3" style="width: 30px;height: 30px;margin-top: -4px;"
+                            src="../assets/img/zzs_profile.jpg">Zar Zar Soe</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Sollicitudin lacus justo pharetra at. Primis tortor
+                        porta luctus tempus non netus, ipsum iaculis. Eget dictum erat, litora ullamcorper lacinia.</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                </div>
+                <div>
+                    <p class="text-dark" style="font-family: 'IBM Plex Sans KR', sans-serif;"><img
+                            class="border rounded-circle me-3" style="width: 30px;height: 30px;margin-top: -4px;"
+                            src="../assets/img/zzs_profile.jpg">Zar Zar Soe</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Sollicitudin lacus justo pharetra at. Primis tortor
+                        porta luctus tempus non netus, ipsum iaculis. Eget dictum erat, litora ullamcorper lacinia.</p>
+                    <p style="padding-left: 47px;margin-top: -12px;">Hello, How are you?</p>
+                </div>
+                <!-- dummy messages end -->
+
+            </div>
+
+            <div class="card-footer">
+                <form>
+                    <div class="row gx-0">
+                        <div class="col"><textarea class="form-control" rows="7"
+                                placeholder="Write your message here..."></textarea>
+                        </div>
+                        <div
+                            class="col-2 col-sm-1 col-md-auto col-lg-auto col-xl-auto col-xxl-auto text-center d-md-flex flex-column">
+                            <button class="btn btn-primary border rounded-circle mt-5" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                                    viewBox="0 0 16 16" class="bi bi-send-fill">
+                                    <path fill-rule="evenodd"
+                                        d="M15.964.686a.5.5 0 0 0-.65-.65l-.095.038L.767 5.854l-.001.001-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.563 2.903.432.275.275.432 2.903 4.563.002.002.26.41a.5.5 0 0 0 .886-.083l.181-.453L15.926.78l.038-.095Zm-1.833 1.89.471-1.178-1.178.471L5.93 9.363l.338.215a.5.5 0 0 1 .154.154l.215.338 7.494-7.494Z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- logout  -->
+        <div class="modal fade" role="dialog" tabindex="-1" id="logout-modal-button-1">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p class="lead fw-bold text-center text-dark pt-4 pb-2"
+                            style="font-size: 20px;font-family: 'IBM Plex Sans KR', sans-serif;">Are you sure you want
+                            to log out?
+                        </p>
+                    </div>
+                    <div class="modal-footer" style="padding: 0px;">
+                        <button class="btn btn-light border rounded-0 border-0" type="button" data-bs-dismiss="modal"
+                            style="margin: 0px;width: 50%;height: 50px;">
+                            Cancel
+                        </button>
+                        <button class="btn btn-danger border rounded-0 border-0" type="submit"
+                            style="margin: 0px;width: 50%;height: 50px;">
+                            Log Out
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hide-on-desktop">
+        <a class="border rounded d-inline scroll-to-top" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+    </div>
+
+    <!-- mobile view nav bar -->
+    <nav class="navbar navbar-light navbar-expand fixed-bottom shadow hide-on-mobile"
+        style="font-size: 29px;background: linear-gradient(rgb(68,92,169) 0%, #21367b 100%), #445ba3;border-radius: 35px;margin-bottom: 18px;margin-right: 15px;margin-left: 15px;height: 51.5px;padding-top: 15px;color: rgb(255,255,255);">
+        <div class="container-fluid"><button data-bs-toggle="collapse" class="navbar-toggler"
+                data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"
+                        style="margin-right: 0px;padding-right: 4px;margin-left: 0px;padding-left: 4px;">
+                        <a class="nav-link" href="student-home-page.html" style="margin-right: 1px;"><i
+                                class="la la-home"
+                                style="margin-right: 1px;color: rgba(241,241,241,0.55);border-color: rgba(241,241,241,0.55);"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"
+                        style="margin-right: 0px;padding-right: 4px;margin-left: 0px;padding-left: 4px;">
+                        <a class="nav-link" href="student-course-videos.html" style="margin-right: 1px;"><i
+                                class="la la-play-circle"
+                                style="margin-right: 1px;color: rgba(241,241,241,0.55);border-color: rgba(241,241,241,0.55);"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"
+                        style="margin-right: 0px;padding-right: 4px;margin-left: 0px;padding-left: 4px;">
+                        <a class="nav-link" href="student-resources.html"><i class="la la-file-zip-o"
+                                style="color: rgba(241,241,241,0.55);"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"
+                        style="margin-right: 0px;padding-right: 4px;margin-left: 0px;padding-left: 4px;">
+                        <a class="nav-link" href="student-assignment.html" style="margin-right: 1px;"><i
+                                class="la la-paste" style="margin-right: 1px;color: rgba(241,241,241,0.55);"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"
+                        style="margin-right: 0px;padding-right: 4px;margin-left: 0px;padding-left: 4px;">
+                        <a class="nav-link" href="student-gradebook.html"><i class="la la-book"
+                                style="color: rgba(241,241,241,0.55);"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/theme.js"></script>
+</body>
+
+</html>
